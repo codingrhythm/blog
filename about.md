@@ -5,9 +5,7 @@ title: About Me
 tags: [about, 5coins, full stack developer, ios developer, web developer, django developer]
 modified: 5-2-2014
 image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
+  feature: shanghai.jpg
 ---
 
 ![About Me]({{ site.url }}/images/about-me.jpg)
