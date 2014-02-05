@@ -5,29 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-<title>5coins is in review &#8211; Zack's Blog</title>
+<title>Instagram Engineering Challenge: The Unshredder &#8211; Zack's Blog</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="/images/">
-<meta name="twitter:title" content="5coins is in review">
+<meta name="twitter:title" content="Instagram Engineering Challenge: The Unshredder">
 <meta name="twitter:description" content="Zack Zhu's Blog">
 <meta name="twitter:creator" content="@https://twitter.com/CodingRhythm">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="5coins is in review">
+<meta property="og:title" content="Instagram Engineering Challenge: The Unshredder">
 <meta property="og:description" content="Zack Zhu's Blog">
-<meta property="og:url" content="/5coins/5coins-is-in-review/">
+<meta property="og:url" content="/coding/instagram-engineering-challenge-the-unshredder/">
 <meta property="og:site_name" content="Zack's Blog">
 
 
 
 
 
-<link rel="canonical" href="/5coins/5coins-is-in-review/">
+<link rel="canonical" href="/coding/instagram-engineering-challenge-the-unshredder/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Zack's Blog Feed">
 
 
@@ -106,17 +106,29 @@
 </div>
 <article>
     <div class="headline-wrap">
-      <h1>5coins is in review</h1>
+      <h1>Instagram Engineering Challenge: The Unshredder</h1>
       <h2></h2>
   </div><!--/ .headline-wrap -->
   <div class="article-wrap">
-      <p>5coins is a simple app for tracking your daily expenses. Unlike other apps available at the store. 5coins only focuses on your daily expenses which means there are no over-weighted features like budgets, multiple accounts, charts/reports etc. I believe simplicity makes life easier!</p>
+      <p>I spent couple of hours on this <a href="http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder">challenge</a>, and finally worked out a solution. I tested the solution with 15 different photos, the result went really well. Except for one photo which has constant sky color, all other photos were all completely restored.</p>
 
-<p><img src="/post-assets/5coins/5coins-is-in-review/1.jpg" alt="5coins Screen shots" /></p>
+<p>The steps of solution are:</p>
 
-<p>5coins had been submitted to App Store yesterday for review. Hopefully it will be available for download next week.</p>
+<ol>
+  <li>Cut the shredded photo in to sections</li>
+  <li>Compare right side of each section with left sides of others and score and sort the matches</li>
+  <li>Check if there are cases that more than one sections connect with the same section, if yes, remove the less match one.</li>
+  <li>
+    <p>Find the first section (left edge) of the photo, this part is a bit tricky. The method I used is to check the match score from both side and determine if there is a significant change on the current match score. If yes, it might be the last section (right edge) of the photo and the section it connects to is the first section. It demonstrates best in graph.</p>
 
-<p>I also made a <a href="http://5coins.cmsight.com">simple page</a> for it</p>
+    <p>0 –(12)–&gt; 9 –(39)–&gt; 8 — (15) –&gt; 13 — (20) –&gt; 10 — (25) –&gt; 3 –(34)–&gt; 5 –(27)–&gt; 4 …..</p>
+
+    <p>the chain above shows the link and match score between sections. Section 0 links with section 9 the score is 12, section 9 links with section 8 score is 39. Section 9 is the right edge and section 8 is the left edge as there is a significant match score change from 9 to 8.</p>
+  </li>
+  <li>Connect the sections by match, and the original photo is beautifully restored.</li>
+</ol>
+
+<p>I also toke the bonus challenge to detect shredder width of the photo. Source code of the solution is <a href="https://github.com/codingrhythm/unshredder">here</a>.</p>
 
 
       <hr>
@@ -135,7 +147,7 @@
 
 
           </div>
-          <p class="byline"><strong>5coins is in review</strong> was published on <time datetime="2012-10-24T03:43:00Z">October 24, 2012</time> by <a href="/about" title="About Zack Zhu">Zack Zhu</a>.</p>
+          <p class="byline"><strong>Instagram Engineering Challenge: The Unshredder</strong> was published on <time datetime="2013-04-21T01:13:00Z">April 21, 2013</time> by <a href="/about" title="About Zack Zhu">Zack Zhu</a>.</p>
       </footer>
 
       <!-- Comments-->
@@ -169,7 +181,6 @@
     
     
     
-    <li><a href="/5coins/5coins-reborn-with-ios7/" title="5coins re-born with iOS7">5coins re-born with iOS7</a></li>
     
     
     
@@ -179,13 +190,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    <li><a href="/5coins/simply-more-clear/" title="Simply More Clear">Simply More Clear</a></li>
     
     
 </ul>

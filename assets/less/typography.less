@@ -113,7 +113,23 @@ blockquote {
 p {
 	margin: 0 0 @indent-var;
     line-height: @content-line-height;
+
+    a{
+        color:@article-link-color;
+
+        &:visited { 
+            color: lighten(@article-link-color, 20); 
+        }
+        &:hover { 
+            color: darken(@article-link-color, 20); 
+        }
+        &:focus { 
+            outline: thin dotted; 
+            color: darken(@article-link-color, 20);
+        }
+    }
 }
+
 
 // Code
 // --------------------------------------------------
