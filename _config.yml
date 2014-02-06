@@ -11,7 +11,7 @@ owner:
   bio:            "I am a full stack developer and falling love with iOS and Django development."
   email:          zhuyuzhou.dev@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        CodingRhythm 
+  twitter:        CodingRhythm
   facebook:       zhu.yuzhou
   github:         codingrhythm
   linkedin:       
@@ -34,6 +34,8 @@ links:
     url: /
   - title: Posts
     url: /posts/
+  - title: About
+    url: /about/
   - title: 5coins
     url: http://5coins.cmsight.com
     external: true
