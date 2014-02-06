@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Zack's Blog</title>
+<subtitle type="text">Full Stack</subtitle>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2014-02-06T12:10:19+11:00</updated>
+<id>/</id>
+<author>
+  <name>Zack Zhu</name>
+  <uri>/</uri>
+  <email>zhuyuzhou.dev@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[5coins re-born with iOS7]]></title>
+  <link rel="alternate" type="text/html" href="/5coins/5coins-reborn-with-ios7/" />
+  <id>/5coins/5coins-reborn-with-ios7</id>
+  <published>2013-10-09T23:33:00Z</published>
+  <updated>2013-10-09T23:33:00Z</updated>
+  <author>
+    <name>Zack Zhu</name>
+    <uri></uri>
+    <email>zhuyuzhou.dev@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;5coins 2.0 is the biggest change since its first release. It works perfectly in iOS 7 with the beautiful new design. I rewrote the entire code base from ground up to make sure every little detail has been touched. You can easily record your expenses with just one hand. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post-assets/5coins/5coins-reborn-with-ios7/1.png&quot; alt=&quot;5coins Screen shots&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post-assets/5coins/5coins-reborn-with-ios7/2.png&quot; alt=&quot;5coins Screen shots&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post-assets/5coins/5coins-reborn-with-ios7/3.png&quot; alt=&quot;5coins Screen shots&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://5coins.cmsight.com&quot;&gt;Download&lt;/a&gt; the latest version now.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/5coins/5coins-reborn-with-ios7/&quot;&gt;5coins re-born with iOS7&lt;/a&gt; was originally published by Zack Zhu at &lt;a href=&quot;&quot;&gt;Zack's Blog&lt;/a&gt; on October 09, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Instagram Engineering Challenge: The Unshredder]]></title>
+  <link rel="alternate" type="text/html" href="/coding/instagram-engineering-challenge-the-unshredder/" />
+  <id>/coding/instagram-engineering-challenge-the-unshredder</id>
+  <published>2013-04-21T01:13:00Z</published>
+  <updated>2013-04-21T01:13:00Z</updated>
+  <author>
+    <name>Zack Zhu</name>
+    <uri></uri>
+    <email>zhuyuzhou.dev@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I spent couple of hours on this &lt;a href=&quot;http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder&quot;&gt;challenge&lt;/a&gt;, and finally worked out a solution. I tested the solution with 15 different photos, the result went really well. Except for one photo which has constant sky color, all other photos were all completely restored.&lt;/p&gt;
+
+&lt;p&gt;The steps of solution are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Cut the shredded photo in to sections&lt;/li&gt;
+  &lt;li&gt;Compare right side of each section with left sides of others and score and sort the matches&lt;/li&gt;
+  &lt;li&gt;Check if there are cases that more than one sections connect with the same section, if yes, remove the less match one.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find the first section (left edge) of the photo, this part is a bit tricky. The method I used is to check the match score from both side and determine if there is a significant change on the current match score. If yes, it might be the last section (right edge) of the photo and the section it connects to is the first section. It demonstrates best in graph.&lt;/p&gt;
+
+    &lt;p&gt;0 –(12)–&amp;gt; 9 –(39)–&amp;gt; 8 — (15) –&amp;gt; 13 — (20) –&amp;gt; 10 — (25) –&amp;gt; 3 –(34)–&amp;gt; 5 –(27)–&amp;gt; 4 …..&lt;/p&gt;
+
+    &lt;p&gt;the chain above shows the link and match score between sections. Section 0 links with section 9 the score is 12, section 9 links with section 8 score is 39. Section 9 is the right edge and section 8 is the left edge as there is a significant match score change from 9 to 8.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Connect the sections by match, and the original photo is beautifully restored.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I also toke the bonus challenge to detect shredder width of the photo. Source code of the solution is &lt;a href=&quot;https://github.com/codingrhythm/unshredder&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/coding/instagram-engineering-challenge-the-unshredder/&quot;&gt;Instagram Engineering Challenge: The Unshredder&lt;/a&gt; was originally published by Zack Zhu at &lt;a href=&quot;&quot;&gt;Zack's Blog&lt;/a&gt; on April 21, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Simply More Clear]]></title>
+  <link rel="alternate" type="text/html" href="/5coins/simply-more-clear/" />
+  <id>/5coins/simply-more-clear</id>
+  <published>2012-11-17T00:43:00Z</published>
+  <updated>2012-11-17T00:43:00Z</updated>
+  <author>
+    <name>Zack Zhu</name>
+    <uri></uri>
+    <email>zhuyuzhou.dev@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;I have just submit 1.2 version for review today. Hopefully you will be able to download next weekend.&lt;/p&gt;
+
+&lt;p&gt;What new?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The user experiences have been improved. The navigation bar will be automatically hidden when you scroll down the list, so you can see more items in the gained screen size.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The expenses list is now separated by days. So it’s more clear than the  old version.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are about 20 purchases since I released the first version. It’s not much. But still thanks to all those people. I will try my best to deliver a better expenses track app on the store.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/5coins/simply-more-clear/&quot;&gt;Simply More Clear&lt;/a&gt; was originally published by Zack Zhu at &lt;a href=&quot;&quot;&gt;Zack's Blog&lt;/a&gt; on November 17, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Chart is Charming]]></title>
+  <link rel="alternate" type="text/html" href="/5coins/chart-is-charming/" />
+  <id>/5coins/chart-is-charming</id>
+  <published>2012-11-11T12:33:00Z</published>
+  <updated>2012-11-11T12:33:00Z</updated>
+  <author>
+    <name>Zack Zhu</name>
+    <uri></uri>
+    <email>zhuyuzhou.dev@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Hello again! The first update of the 5coins has been released today. The major change is a bar chart that shows the expense trends though out the whole year.&lt;/p&gt;
+
+&lt;p&gt;To show the chart is quite easy, just rotate your iPhone/iPod in the list view. That’s it. Hope you like this new feature.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post-assets/5coins/chart-is-charming/1.jpg&quot; alt=&quot;5coins Screen shots&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/5coins/chart-is-charming/&quot;&gt;Chart is Charming&lt;/a&gt; was originally published by Zack Zhu at &lt;a href=&quot;&quot;&gt;Zack's Blog&lt;/a&gt; on November 11, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Freshly Baked!]]></title>
+  <link rel="alternate" type="text/html" href="/5coins/freshly-baked/" />
+  <id>/5coins/freshly-baked</id>
+  <published>2012-11-01T23:09:00Z</published>
+  <updated>2012-11-01T23:09:00Z</updated>
+  <author>
+    <name>Zack Zhu</name>
+    <uri></uri>
+    <email>zhuyuzhou.dev@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;5coins has been approved today, and it’s available for &lt;a href=&quot;http://5coins.cmsight.com&quot;&gt;download&lt;/a&gt; now. Feedbacks are really appreciated!&lt;/p&gt;
+
+&lt;p&gt;You might want to know if there will be any new features in next version. Well, I am trying to make this app as clean as possible. The current version is only 0.8m for download. I don’t want it to have everything within the pocket. But still, there is something planned in near future. I’ll give you a sneak preview on what’s going to happen apart from regular updates.&lt;/p&gt;
+
+&lt;p&gt;Cloud Synch&lt;/p&gt;
+
+&lt;p&gt;Cloud feature is not only used to backup the data. It can also be used to corroborate with others. For instance, my wife and I are doing daily expenses tracking on a notebook (That’s the reason why I made this app at first place). We mark on all items which are spent by me, so in the end of the month we will know how much I spent as well as how much she spent. This might not be everyone’s case though, but you can still use it for synching data between iPhone, iPad and Mac. Yep! Apps for those devices are also planned. They will be different from the app on iPhone. I can take full advantage of the big screen.&lt;/p&gt;
+
+&lt;p&gt;That’s all for today, one feature at a time! Hope you like 5coins as much as we do!&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/5coins/freshly-baked/&quot;&gt;Freshly Baked!&lt;/a&gt; was originally published by Zack Zhu at &lt;a href=&quot;&quot;&gt;Zack's Blog&lt;/a&gt; on November 01, 2012.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[5coins is in review]]></title>
+  <link rel="alternate" type="text/html" href="/5coins/5coins-is-in-review/" />
+  <id>/5coins/5coins-is-in-review</id>
+  <published>2012-10-24T03:43:00Z</published>
+  <updated>2012-10-24T03:43:00Z</updated>
+  <author>
+    <name>Zack Zhu</name>
+    <uri></uri>
+    <email>zhuyuzhou.dev@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;5coins is a simple app for tracking your daily expenses. Unlike other apps available at the store. 5coins only focuses on your daily expenses which means there are no over-weighted features like budgets, multiple accounts, charts/reports etc. I believe simplicity makes life easier!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/post-assets/5coins/5coins-is-in-review/1.jpg&quot; alt=&quot;5coins Screen shots&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5coins had been submitted to App Store yesterday for review. Hopefully it will be available for download next week.&lt;/p&gt;
+
+&lt;p&gt;I also made a &lt;a href=&quot;http://5coins.cmsight.com&quot;&gt;simple page&lt;/a&gt; for it&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/5coins/5coins-is-in-review/&quot;&gt;5coins is in review&lt;/a&gt; was originally published by Zack Zhu at &lt;a href=&quot;&quot;&gt;Zack's Blog&lt;/a&gt; on October 24, 2012.&lt;/p&gt;</content>
+</entry>
+
+</feed>
