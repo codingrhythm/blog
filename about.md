@@ -8,8 +8,6 @@ image:
   feature: shanghai.jpg
 ---
 
-![About Me]({{ site.url }}/images/about-me.jpg)
-
 I am an experienced web and mobile application developer who is passionate about programming and computer technology. I love to make things work by coding.
 
 In most cases, I use Python (Django) or PHP for my web services. Objective C, Flex, HTML(5), Javascript (JQuery) and CSS(3) are my blocks for user interface building. I always try to implement the latest and coolest skills and technologies on new project which means I always learn something new from time to time.
