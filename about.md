@@ -44,7 +44,7 @@ Here is a list of skills and tools I have solid experience:
 - Photoshop (Web and UI design)
 - Flex (Action Script 3)
 
-If you are interested in working with me, drop me a email to [zhuyuzhou.dev@gmail.com][email-link] or you can view my resume [here][resume-link]
+If you are interested in working with me, drop me a email to [zhuyuzhou.dev@gmail.com][email-link] or you can view my resume [here][resume-link].
 
 [ref-link-1]: http://www.findingoptimism.com/
 [ref-link-2]: http://12income.com/
