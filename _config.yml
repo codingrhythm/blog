@@ -2,7 +2,7 @@ title:            Zack's Blog
 description:      I'm a full stack app developer living in Sydney.
 url:              http://blog.cmsight.com
 signoff:          Zack Zhu
-disqus_shortname: zackzhusblog
+disqus_shortname: cmsightblog
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: UA-35816032-1
 
