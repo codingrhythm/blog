@@ -9,8 +9,6 @@ google_analytics: UA-35816032-1
 links:
   - name:         About
     url:          /about
-  - name:         Blog
-    url:          /posts
   - name:         5coins
     url:          http://5coins.cmsight.com
     external:     true
