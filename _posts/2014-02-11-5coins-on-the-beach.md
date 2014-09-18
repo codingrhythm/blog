@@ -2,6 +2,7 @@
 layout: post
 title:  "5coins on the beach"
 date:   2014-2-13 17:59:14
+categories: 5coins
 ---
 
 ![5coins on the beach]({{ site.url }}/post-assets/5coins-on-the-beach/1.jpg)
