@@ -84,9 +84,10 @@ footer {
   line-height: 2em;
   margin: auto;
   padding-bottom: 30px;
-  text-align: center; }
+  text-align: center; 
+    color: #797979;}
   footer * {
-    color: #797979; }
+     }
 
 #container {
   *zoom: 1;
@@ -136,6 +137,7 @@ footer {
 
 .summary{
     color: #999;
+    line-height: 1.5em;
 }
 
 .content {
