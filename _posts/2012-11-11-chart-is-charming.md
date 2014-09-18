@@ -9,4 +9,4 @@ Hello again! The first update of the 5coins has been released today. The major c
 
 To show the chart is quite easy, just rotate your iPhone/iPod in the list view. That's it. Hope you like this new feature.
 
-![5coins Screen shots]({{ site.url }}/post-assets{{page.url}}1.jpg)
+![5coins Screen shots]({{ site.url }}/post-assets/chart-is-charming/1.jpg)

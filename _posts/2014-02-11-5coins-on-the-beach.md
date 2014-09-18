@@ -5,7 +5,7 @@ date:   2014-2-13 17:59:14
 categories: 5coins
 ---
 
-![5coins on the beach]({{ site.url }}/post-assets{{page.url}}1.jpg)
+![5coins on the beach]({{ site.url }}/post-assets/5coins-on-the-beach/1.jpg)
 
 This is the 5coins logo I made when I was on the beach last Saturday afternoon with my wife. Just like laying on the beach, using 5coins should always be easy, relaxing and fun. That's why I made this app at first place after I was disappointed by all other heavily featured expense tracking apps.
 
