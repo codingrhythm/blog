@@ -1,68 +1,25 @@
 title:            Zack's Blog
-tagline:          Full Stack
-description:      Zack Zhu's Blog
-# Your site's domain goes here. Leave localhost server or blank when working locally.
-#url:              http://blog.cmsight.com
+description:      I'm a full stack app developer living in Sydney.
+url:              http://blog.cmsight.com
+signoff:          Zack Zhu
+disqus_shortname: zackzhusblog
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: UA-35816032-1
 
-# Owner/author information
-owner:
-  name:           Zack Zhu
-  avatar:         bio-photo.jpg
-  location:       Sydney
-  bio:            "I am a full stack developer and ready to do some cool staffs."
-  email:          zhuyuzhou.dev@gmail.com
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:        CodingRhythm
-  facebook:       zhu.yuzhou
-  github:         codingrhythm
-  linkedin:       
-  instagram:      codingrhythm
-  lastfm:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   UA-35816032-1
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:        
-
-# Links to include in top navigation
-# For external links add external: true
 links:
-  - title: Home
-    url: /
-  - title: Posts
-    url: /posts/
-  - title: About
-    url: /about/
-  - title: 5coins
-    url: http://5coins.cmsight.com
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Australia/Sydney
-future:      true
-pygments:    true
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          /posts
+  - name:         5coins
+    url:          http://5coins.cmsight.com
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/codingrhythm
+    external:     true
+highlighter:      pygments
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart
