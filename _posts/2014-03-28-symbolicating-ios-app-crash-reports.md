@@ -2,7 +2,7 @@
 layout: post
 title:  "Symbolicating iOS App Crash Reports"
 date:   2014-3-28 9:27:00
-categories: 5coins
+categories: tips
 ---
 
 Steps to analyze crash report from apple:
