@@ -16,9 +16,9 @@ However, from time to time, I still receive emails (less than 10) for users comp
 
 Except for last case which the operation is not reversable, you will be able to get your data back if iCloud settings are all correct.
 
-### Note for iOS 8
+#### Notes for iOS 8
 
 Data will not be available during the upgrading process of iCloud drive. So just wait for the upgrade process to complete, you will be able to see your previous data again in 5coins. I have already verified it this morning on my device.
 
-### Note for multiple devices
+#### Notes for multiple devices
 Data sync between devices is automatically handled by iOS. 5coins has no control when it should happen. So just be patient if you install 5coins on a new device, and your data from another device is not shown up yet. It will arrive shortly for sure as long as you are using the same iCloud account, and device is connected with Internet. 
