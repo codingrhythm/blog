@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "5coins 和 iCloud 中文版"
+title:  "5coins 和 iCloud"
 date:   2014-09-25 17:34:00
 categories: 5coins
 ---
