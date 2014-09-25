@@ -13,8 +13,9 @@ However, from time to time, I still receive emails (less than 10) for users comp
 2. Switch off Document & Data for iCloud in iOS 7 or iCloud Drive for 5coins in iOS 8.
 3. No free space available in iCloud?
 4. User removed app data while trying to delete 5coins from device.
+5. User specifically remove data of 5coins in iCloud.
 
-Except for last case which the operation is not reversable, you will be able to get your data back if iCloud settings are all correct.
+Except for last two cases which the operation is not reversable, you will be able to get your data back if iCloud settings are all correct.
 
 #### Notes for iOS 8
 
